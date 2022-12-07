@@ -17,11 +17,11 @@ public class Main {
     record Shifts(int firstFrom, int firstTo, int secondFrom, int secondTo) {
 
         int isContained() {
-            if (firstFrom <= secondFrom && firstTo >= secondTo) {
+            if (firstFrom <= secondFrom && firstTo >= secondFrom) {
                 return 1;
             }
 
-            if (secondFrom <= firstFrom && secondTo >= firstTo) {
+            if (secondFrom <= firstFrom && secondTo >= firstFrom) {
                 return 1;
             }
 
